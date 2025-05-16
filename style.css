@@ -1,0 +1,341 @@
+/* fuentes externas */
+
+.rancho-regular {
+    font-family: "Rancho", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.crafty-girls-regular {
+    font-family: "Crafty Girls", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+#subp {
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+}
+
+nav {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.nav-container a {
+    color: inherit;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 1px solid rgba(255, 235, 124, 0.637);
+    width: auto;
+    position: relative;
+    padding: 25px;
+}
+
+nav a {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 1px solid rgba(255, 235, 124, 0.637);
+    border-radius: 10px;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    flex: 1;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+    color: #3b2549;
+}
+
+.layout {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 25px;
+}
+
+.titulo {
+    font-size: 100px;
+    color: #fbeffb;
+    text-shadow: 2px 2px 10px #503c6e;
+    margin: 0;
+}
+
+.sub {
+    font-size: 25px;
+    color: #fbeffb;
+    margin-top: -20px;
+    text-align: left;
+    text-shadow: 2px 2px 10px #30283b;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+figure img {
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+figure img:hover {
+    transform: scale(1.5);
+}
+
+figcaption {
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+figcaption:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+    color: #3b2549;
+}
+
+figcaption a {
+    color: inherit;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 25px;
+}
+
+#contact img {
+    max-width: 100%;
+    height: auto;
+}
+
+#michi3 {
+    display: flex;
+    justify-self: center;
+}
+
+
+
+/* style del aside */
+
+aside {
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 1px solid rgba(255, 235, 124, 0.637);
+    width: 300px;
+    height: 400px;
+    position: relative;
+    padding: 25px;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+
+/* esquinas pegadas */
+
+.corner {
+    position: absolute;
+    width: 70px;
+    pointer-events: none;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+
+/* hover y animación del gato */
+
+.gatito {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+.gato {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dormido {
+    opacity: 1;
+    z-index: 2;
+}
+
+.despierto {
+    opacity: 0;
+    z-index: 1;
+}
+
+.gatito:hover .despierto {
+    opacity: 1;
+}
+
+.gatito:hover .dormido {
+    opacity: 0;
+}
+
+.gatito:hover .despierto {
+    opacity: 1;
+    animation: orejitas 0.4s ease-in-out;
+}
+
+@keyframes orejitas {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    75% {
+        transform: rotate(-1deg);
+    }
+}
+
+/*style del main*/
+
+main {
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 1px solid rgba(255, 235, 124, 0.637);
+    width: 600px;
+    height: 360px;
+    position: relative;
+    padding: 45px;
+}
+
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: 1px solid rgba(255, 235, 124, 0.637);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.icons img {
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.7)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.icons:hover {
+    animation: glow-tintineo 1.5s infinite ease-in-out;
+}
+
+@keyframes glow-tintineo {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 14px rgba(255, 255, 255, 0.6));
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .titulo {
+        font-size: 50px;
+    }
+
+    .sub {
+        font-size: 18px;
+        text-align: center;
+    }
+}
